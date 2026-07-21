@@ -41,8 +41,12 @@ def isPossibleBuild(ramsonNote, magazine):
     return True
 
 
-print(isPossibleBuild("abc","cbad"))
-
+print(isPossibleBuild("aa", "aab"))   # True
+print(isPossibleBuild("aa", "ab"))    # False
+print(isPossibleBuild("abc", "cbad")) # True
+print(isPossibleBuild("aaa", "aa"))   # False
+print(isPossibleBuild("", "abc"))     # True
+print(isPossibleBuild("a", ""))       # False
 
     
 # I traverse first the ramson note because i need know the string tha i need build, keep the elements count in the dictionary, I can return false if the magazine has lower letther that the note that i will build. 
