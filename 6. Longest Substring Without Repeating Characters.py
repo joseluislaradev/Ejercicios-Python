@@ -33,7 +33,38 @@ def longestSubstringWitoutRepeat(largeText):
     return longest_subarray
 
 
+print('first function')
 print(longestSubstringWitoutRepeat("abcabcbb"))
 print(longestSubstringWitoutRepeat("bbbbb"))
 print(longestSubstringWitoutRepeat("pwwkew"))
 print(longestSubstringWitoutRepeat(""))
+
+
+
+def longest_substring_Witout_repeats(largeText):
+
+    longest_subarray = 0
+    start = 0
+    seen = set()
+
+    for end in range(len(largeText)):
+    
+
+        while largeText[end] in seen:
+            seen.remove(largeText[start])
+            start += 1
+            
+        seen.add(largeText[end])
+
+        longest_subarray = max(longest_subarray, end - start + 1)
+
+
+    return longest_subarray
+
+
+
+print('second function')
+print(longest_substring_Witout_repeats("abcabcbb"))
+print(longest_substring_Witout_repeats("bbbbb"))
+print(longest_substring_Witout_repeats("pwwkew"))
+print(longest_substring_Witout_repeats(""))
