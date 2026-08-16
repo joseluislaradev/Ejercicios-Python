@@ -1,0 +1,14 @@
+Los datos son: 
+
+Nombre: Jose Luis 
+Apellido: Arredondo 
+--------------------
+Nombre: Juan 
+Apellido: Mancera 
+--------------------
+Nombre: Pedro 
+Apellido: Martinez 
+--------------------
+Nombre: Armando 
+Apellido: Rodriguez 
+--------------------
