@@ -18,11 +18,16 @@ class ListNode:
 
 
 def reverse_list(head):
-    next_stack = []
+    previous = None
     
-    for 
-
-#Test cases
+    while head:
+        next_node = head.next
+        head.next = previous
+        previous = head
+        head = next_node
+    
+    return previous
+    
 def print_list(head):
     values = []
 
